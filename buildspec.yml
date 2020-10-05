@@ -10,5 +10,5 @@ phases:
       - echo build completed successfully
 artifacts:
   files:
-    - /build/libs/aws-test-springboot.jar
+    - build/libs/*.jar
   discard-paths: yes
