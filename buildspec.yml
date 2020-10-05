@@ -1,12 +1,15 @@
-version: 0.2
+version: 0.1
 
 phases:
+  install:
+   commands:
+     - echo Entering install phase...
+     - echo Nothing to do now
   build:
     commands:
-      - ./gradlew build
+     - echo Build started on `date`
+     - gradle build
 artifacts:
+  type: zip
   files:
-    - build/libs/*.jar
-    - appspec.yml
-    - scripts/*
-  discard-paths: yes
+    - 'build/libs/*.jar'
