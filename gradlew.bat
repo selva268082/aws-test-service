@@ -87,3 +87,5 @@ exit /b 1
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
+
+chmod +x gradlew
