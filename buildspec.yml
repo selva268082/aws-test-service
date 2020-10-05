@@ -1,0 +1,14 @@
+version: 0.2 
+
+phases: 
+  build:
+    commands:
+      - echo entered the build phases
+      - gradle clean package
+  post_build:
+    commands:
+      - echo build completed successfully
+artifacts:
+  files:
+    - /build/libs/aws-test-springboot.jar
+  discard-paths: yes
